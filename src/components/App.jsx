@@ -1,8 +1,7 @@
 import { Profile } from '../components/Profile/Profile';
 import user from '../components/data/user.json';
-// import Statistics from '../components/Statistics/StatisticsSection';
-// import Stats from '../components/Statistics/Stats';
-// import data from '../data.json';
+import { Statistics} from './Statistics/Statistics';
+import data from '../components/data/data.json';
 
 const App = () => {
   return (
@@ -13,12 +12,11 @@ const App = () => {
     tag={user.tag}
     location={user.location}
     stats={user.stats}
-  />
+      />
       
-    {/* <Statistics title="Upload stats">
-        <Stats data={data}/>
-    </Statistics>
-       */}
+    <Statistics title="Upload stats" stats={data} />
+   
+      
       
 
     </div>
